@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>📚 Bookshelf Apps</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Masukan buku terbaru.</h2>
+        <p>Form untuk melakukan input buku terbaru.</p>
+        <form action="" class="bookForm">
+          <div>
+            <label for="judul">Judul: </label>
+            <input type="text" id="judul" name="judul" />
+          </div>
+          <div>
+            <label for="penulis">Penulis: </label>
+            <input type="text" id="penulis" name="penulis" />
+          </div>
+          <div>
+            <label for="tahun">Tahun: </label>
+            <input type="number" id="tahun" name="tahun" />
+          </div>
+          <div class="inputCheckbox">
+            <label for="isComplete">Selesai di baca: </label>
+            <input type="checkbox" id="isComplete" name="isComplete" />
+          </div>
+          <button class="buttonPrimary">✅ Tambah</button>
+        </form>
+      </section>
+      <div class="right">
+        <section class="searchbox">
+          <form action="">
+            <label for="search">Pencarian</label>
+            <div class="searchInput">
+              <input type="text" id="search" name="search" />
+              <button class="buttonPrimary">🔎 Cari</button>
+            </div>
+          </form>
+        </section>
+        <section>
+          <h2>Belum selesai dibaca.</h2>
+          <p>List kumpulan buku yang belum selesai dibaca.</p>
+        </section>
+        <section>
+          <h2>Selesai dibaca.</h2>
+          <p>List kumpulan buku yang telah selesai dibaca.</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

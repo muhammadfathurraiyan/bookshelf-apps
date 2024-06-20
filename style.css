@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: inherit;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.buttonPrimary {
+  padding: 8px 16px;
+  background-color: #29903b;
+  color: #e6edf3;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 8rem;
+}
+
+.buttonDestruction {
+  padding: 8px 16px;
+  background-color: #B62324;
+  color: #e6edf3;
+  font-weight: 500;
+  border-radius: 4px;
+  width: 8rem;
+}
+
+body {
+  background-color: #010409;
+  color: #e6edf3;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 85%;
+  margin: 1rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+header {
+  padding: 1rem;
+  background-color: #0d1117;
+  border-radius: 8px;
+  border: #30363d 1px solid;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+section {
+  background-color: #0d1117;
+  padding: 1rem;
+  border-radius: 8px;
+  border: #30363d 1px solid;
+  height: fit-content;
+}
+
+.right {
+  grid-column: span 2 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  height: fit-content;
+}
+
+.searchbox {
+  grid-column: span 2 / span 2;
+}
+
+.bookForm {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px
+}
+
+input {
+  width: 100%;
+  background-color: #010409;
+  padding: 8px;
+  border: #30363d 1px solid;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inputCheckbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.inputCheckbox input {
+  width: fit-content;
+}
+
+.bookForm button {
+  margin-top: 4px;
+  width: 100%;
+}
+
+.searchInput {
+  display: flex;
+  gap: 8px;
+}
