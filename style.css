@@ -27,7 +27,7 @@ button {
   width: 8rem;
 }
 
-.buttonDestruction {
+.buttonDestructive {
   padding: 8px 16px;
   background-color: #B62324;
   color: #e6edf3;
@@ -119,4 +119,22 @@ label {
 .searchInput {
   display: flex;
   gap: 8px;
+}
+
+.book-item {
+  margin-top: 1rem;
+  padding: 8px;
+  border: #30363d 1px solid;
+  border-radius: 4px;
+}
+
+.action {
+  margin-top: 1rem;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.action button {
+  width: 100%;
 }
