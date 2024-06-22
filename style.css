@@ -29,7 +29,7 @@ button {
 
 .buttonDestructive {
   padding: 8px 16px;
-  background-color: #B62324;
+  background-color: #b62324;
   color: #e6edf3;
   font-weight: 500;
   border-radius: 4px;
@@ -83,7 +83,7 @@ section {
 .bookForm {
   margin-top: 16px;
   display: grid;
-  gap: 8px
+  gap: 8px;
 }
 
 input {
@@ -137,4 +137,28 @@ label {
 
 .action button {
   width: 100%;
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #010409dd;
+  /* opacity: 80%; */
+  padding: 1rem;
+}
+
+.modalContent {
+  background-color: #0d1117;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  border: #30363d 1px solid;
+  width: 400px;
 }

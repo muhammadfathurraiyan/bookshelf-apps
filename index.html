@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,18 +14,18 @@
       <section>
         <h2>Masukan buku terbaru.</h2>
         <p>Form untuk melakukan input buku terbaru.</p>
-        <form action="" class="bookForm" id="formBuku">
+        <form class="bookForm" id="bookForm">
           <div>
             <label for="title">Judul: </label>
-            <input type="text" id="title" name="judul" />
+            <input required type="text" id="title" name="judul" />
           </div>
           <div>
             <label for="author">Penulis: </label>
-            <input type="text" id="author" name="penulis" />
+            <input required type="text" id="author" name="penulis" />
           </div>
           <div>
             <label for="year">Tahun: </label>
-            <input type="number" id="year" name="tahun" />
+            <input required type="number" id="year" name="tahun" />
           </div>
           <div class="inputCheckbox">
             <label for="isComplete">Selesai di baca: </label>
@@ -36,7 +36,7 @@
       </section>
       <div class="right">
         <section class="searchbox">
-          <form action="">
+          <form id="searchForm">
             <label for="search">Pencarian</label>
             <div class="searchInput">
               <input type="text" id="search" name="search" />
@@ -47,15 +47,28 @@
         <section>
           <h2>Belum selesai dibaca.</h2>
           <p>List kumpulan buku yang belum selesai dibaca.</p>
-          <div id="incompleteBookshelfList"></div>
+          <div id="listUncompleted"></div>
         </section>
         <section>
           <h2>Selesai dibaca.</h2>
           <p>List kumpulan buku yang telah selesai dibaca.</p>
-          <div id="completeBookshelfList"></div>
+          <div id="listCompleted"></div>
         </section>
       </div>
     </main>
+    <div class="modal" id="deleteModal">
+      <div class="modalContent">
+        <h2>Konfirmasi Penghapusan</h2>
+        <p>
+          Apa anda yakin ingin menghapus buku ini dari list? tindakan ini akan
+          menghapus buku dari server.
+        </p>
+        <div class="action">
+          <button id="cancelDelete" class="buttonPrimary">Kembali</button>
+          <button id="confirmDelete" class="buttonDestructive">Hapus</button>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
