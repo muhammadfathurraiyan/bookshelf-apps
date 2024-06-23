@@ -41,7 +41,7 @@ function generateBookObject(id, title, author, year, isComplete) {
     id,
     title,
     author,
-    year,
+    year: parseInt(year),
     isComplete,
   };
 }
@@ -193,7 +193,9 @@ function searchBook() {
   document.dispatchEvent(new Event(RENDER_EVENT));
 }
 
-document.getElementById("confirmDelete").addEventListener("click", confirmDelete);
+document
+  .getElementById("confirmDelete")
+  .addEventListener("click", confirmDelete);
 document.getElementById("cancelDelete").addEventListener("click", closeModal);
 
 document.addEventListener("DOMContentLoaded", function () {
